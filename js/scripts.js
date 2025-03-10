@@ -7,9 +7,10 @@
         });
         
         // Smooth scroll para links âncora
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        /* [href^="#"] */
+        document.querySelectorAll('a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+                // e.preventDefault();
                 
                 // Fechar menu mobile se estiver aberto
                 if (mainNav.classList.contains('active')) {
