@@ -3,6 +3,7 @@
     --primary-dark-green: #0A4001;
     --primary-medium-green: #1A6C14;
     --primary-light-green: #3D8424;
+    --primary-light-green-rgb: 26, 108, 20;
     --accent-amber: #D38C23;
     --accent-light-amber: #F4B942;
     --text-color: #333333;
@@ -241,9 +242,10 @@ nav ul li a:hover {
     padding: 25px;
 }
 
-.service-content h3 {
+.service-icon h3 {
+    font-size: 20px;
     margin-bottom: 15px;
-    color: var(--primary-dark-green);
+    color: var(--light-color);
 }
 
 /* Equipe */
@@ -314,7 +316,7 @@ nav ul li a:hover {
 .contact-icon {
     width: 40px;
     height: 40px;
-    background-color: var(--primary-medium-green);
+    background-color: rgba(var(--primary-light-green-rgb), .55);;
     color: white;
     border-radius: 50%;
     display: flex;
