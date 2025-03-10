@@ -56,15 +56,16 @@ header {
     width: auto;
 }
 
-/* .logo h1 {
-            font-size: 1.5rem;
-            font-weight: 600;
-        } */
+/* 
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+} 
+*/
 
 #main-nav {
     margin-top: 40px;
     background-color: var(--background-color);
-
 }
 
 nav ul {
