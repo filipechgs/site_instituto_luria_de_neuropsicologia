@@ -185,10 +185,11 @@ nav ul li a:hover {
 }
 
 .about-image {
+    justify-items: center;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    border: 3px solid var(--primary-light-green);
+    /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); */
+    /* border: 3px solid var(--primary-light-green); */
 }
 
 .about-image img {
