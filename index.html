@@ -6,37 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instituto Luria de Neuropsicologia</title>
 
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon-16x16.png" type="image/x-icon">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/publicacoes.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <img src="./img/luria-logo-horizontal.jpeg" alt="Logo Instituto Luria">
-                <!-- <h1>Instituto Luria</h1> -->
-            </div>
-            <button class="mobile-menu-btn">☰</button>
-            <nav id="main-nav">
-                <ul>
-                    <li><a href="/#inicio">Início</a></li>
-                    <li><a href="/#sobre">Sobre</a></li>
-                    <li><a href="/#servicos">Serviços</a></li>
-                    <li><a href="/#equipe">Equipe</a></li>
-                    <li><a href="/#contato">Contato</a></li>
-
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Artigos e Publicações</a></li>
-                    <li><a href="">Eventos</a></li>
-                </ul>
-            </nav>
+<!-- Header -->
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <img src="./img/luria-logo-horizontal.jpeg" alt="Logo Instituto Luria">
+            <!-- <h1>Instituto Luria</h1> -->
         </div>
-    </header>
-
+        <button class="mobile-menu-btn">☰</button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html#inicio">Início</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="index.html#servicos">Serviços</a></li>
+                <li><a href="index.html#equipe">Equipe</a></li>
+                
+                <li><a href="publicacoes.html">Publicações e Eventos</a></li>
+                <li><a href="">Cursos</a></li>
+                <li><a href="">Blog</a></li>
+                
+                <li><a href="index.html#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
     <!-- Hero -->
     <section id="inicio" class="hero">
         <div class="hero-content">
@@ -55,7 +57,8 @@
         <div class="about-content">
             <div class="about-text">
                 <h3>Conheça o Instituto Luria</h3>
-                <p>Fundado em 2010, o Instituto Luria é referência em neuropsicologia no Brasil. Nossa abordagem integra
+                <p>Fundado em 2010, o Instituto Luria é referência em neuropsicologia no Brasil. Nossa abordagem
+                    integra
                     avaliação neuropsicológica, reabilitação cognitiva e tratamento terapêutico, sempre com base nas
                     mais recentes evidências científicas.</p>
                 <p>Contamos com uma equipe multidisciplinar altamente capacitada, que trabalha de forma colaborativa
@@ -69,8 +72,10 @@
             <div class="about-image">
                 <div class="carousel-container">
                     <div class="carousel">
-                        <div class="carousel-item" style="background-image: url('/cadastro-de-fornecedores.png')"></div>
-                        <div class="carousel-item" style="background-image: url('/cadastro-de-funcionários.png')"></div>
+                        <div class="carousel-item" style="background-image: url('/cadastro-de-fornecedores.png')">
+                        </div>
+                        <div class="carousel-item" style="background-image: url('/cadastro-de-funcionários.png')">
+                        </div>
                         <div class="carousel-item"
                             style="background-image: url('/Captura\ de\ tela\ 2025-03-09\ 152828.png')"></div>
                         <div class="carousel-item" style="background-image: url('/lançamento-de-notas.png')"></div>
@@ -106,7 +111,8 @@
                 </div>
                 <div class="service-content">
                     <p>Avaliação completa das funções cognitivas através de testes padronizados, entrevistas e
-                        observação clínica, resultando em um relatório detalhado com diagnóstico e recomendações.</p>
+                        observação clínica, resultando em um relatório detalhado com diagnóstico e recomendações.
+                    </p>
                 </div>
             </div>
             <div class="service-card">
@@ -114,7 +120,8 @@
                     <h3>Reabilitação Cognitiva</h3>
                 </div>
                 <div class="service-content">
-                    <p>Programas personalizados para restaurar ou compensar habilidades cognitivas comprometidas, como
+                    <p>Programas personalizados para restaurar ou compensar habilidades cognitivas comprometidas,
+                        como
                         memória, atenção, linguagem e funções executivas.</p>
                 </div>
             </div>
@@ -132,7 +139,8 @@
                     <h3>Psicoterapia</h3>
                 </div>
                 <div class="service-content">
-                    <p>Atendimento psicológico individual para questões emocionais, comportamentais e adaptativas, com
+                    <p>Atendimento psicológico individual para questões emocionais, comportamentais e adaptativas,
+                        com
                         abordagens específicas para diferentes transtornos e condições.</p>
                 </div>
             </div>
@@ -192,7 +200,8 @@
                 <div class="member-info">
                     <h3>Dr. Felipe Mendes</h3>
                     <p>Psicopedagogo</p>
-                    <p>Foco em estratégias de aprendizagem para crianças e adolescentes com distúrbios neurológicos.</p>
+                    <p>Foco em estratégias de aprendizagem para crianças e adolescentes com distúrbios neurológicos.
+                    </p>
                 </div>
             </div>
         </div>
@@ -238,87 +247,88 @@
                 </div>
             </div>
             <!-- <div class="contact-form">
-                <h3>Envie uma Mensagem</h3>
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Nome Completo</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Telefone</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Assunto</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Mensagem</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit" class="form-button">Enviar Mensagem</button>
-                </form>
-            </div> -->
+            <h3>Envie uma Mensagem</h3>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Assunto</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="form-button">Enviar Mensagem</button>
+            </form>
+        </div> -->
         </div>
     </section>
+</main>
+<!-- Linkd do WhatsApp -->
+<a href="https://wa.me/seunumero" class="whatsapp-link" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
 
-    <!-- Linkd do WhatsApp -->
-    <a href="https://wa.me/seunumero" class="whatsapp-link" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    </a>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-column">
-                <h3>Instituto Luria</h3>
-                <p>Excelência em neuropsicologia e cuidados com a saúde mental, oferecendo diagnóstico preciso e
-                    tratamentos personalizados.</p>
-            </div>
-            <div class="footer-column">
-                <h3>Links Rápidos</h3>
-                <ul>
-                    <li><a href="/#inicio">Início</a></li>
-                    <li><a href="/#sobre">Sobre Nós</a></li>
-                    <li><a href="/#servicos">Serviços</a></li>
-                    <li><a href="/#equipe">Equipe</a></li>
-                    <li><a href="/#contato">Contato</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Artigos e Publicações</a></li>
-                    <li><a href="">Eventos</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Serviços</h3>
-                <ul>
-                    <li><a href="/#servicos">Avaliação Neuropsicológica</a></li>
-                    <li><a href="/#servicos">Reabilitação Cognitiva</a></li>
-                    <li><a href="/#servicos">Terapia Familiar</a></li>
-                    <li><a href="/#servicos">Psicoterapia</a></li>
-                    <li><a href="/#servicos">Avaliação Psicopedagógica</a></li>
-
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Contato</h3>
-                <ul>
-                    <li>Telefone: (11) 3456-7890</li>
-                    <li>Email: contato@institutoLuria.com.br</li>
-                    <li>Endereço: Av. Paulista, 1000, Conjunto 501</li>
-                </ul>
-            </div>
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Instituto Luria</h3>
+            <p>Excelência em neuropsicologia e cuidados com a saúde mental, oferecendo diagnóstico preciso e
+                tratamentos personalizados.</p>
         </div>
-        <div class="copyright">
-            <p>&copy; 2025 Instituto Luria de Neuropsicologia. Todos os direitos reservados.</p>
+        <div class="footer-column">
+            <h3>Links Rápidos</h3>
+            <ul>
+                <li><a href="/#inicio">Início</a></li>
+                <li><a href="/#sobre">Sobre Nós</a></li>
+                <li><a href="/#servicos">Serviços</a></li>
+                <li><a href="/#equipe">Equipe</a></li>
+                <li><a href="/#contato">Contato</a></li>
+                
+                <li><a href="/publicacoes.html">Publicações e Eventos</a></li>
+                <li><a href="">Cursos</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
         </div>
-    </footer>
+        <div class="footer-column">
+            <h3>Serviços</h3>
+            <ul>
+                <li><a href="/#servicos">Avaliação Neuropsicológica</a></li>
+                <li><a href="/#servicos">Reabilitação Cognitiva</a></li>
+                <li><a href="/#servicos">Terapia Familiar</a></li>
+                <li><a href="/#servicos">Psicoterapia</a></li>
+                <li><a href="/#servicos">Avaliação Psicopedagógica</a></li>
 
-    <script src="js/scripts.js"></script>
-    <script src="js/carousel.js"></script>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contato</h3>
+            <ul>
+                <li>Telefone: (11) 3456-7890</li>
+                <li>Email: contato@institutoLuria.com.br</li>
+                <li>Endereço: Av. Paulista, 1000, Conjunto 501</li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 Instituto Luria de Neuropsicologia. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script src="js/scripts.js"></script>
+<script src="js/carousel.js"></script>
 </body>
 
 </html>
