@@ -4,6 +4,7 @@ const mainNav = document.getElementById('main-nav');
 
 mobileMenuBtn.addEventListener('click', () => {
     mainNav.classList.toggle('active');
+    mobileMenuBtn.textContent = mobileMenuBtn.textContent === "☰"? "⛌" : "☰";
 });
 
 // Smooth scroll para links âncora
