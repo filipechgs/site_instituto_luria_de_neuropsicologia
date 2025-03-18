@@ -1,19 +1,17 @@
-
 .carousel-container {
     position: relative;
     width: 90%;
     max-width: 1200px;
+    margin: 0 auto; /* Centraliza horizontalmente */
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    height: auto;
-    aspect-ratio: 16/9; /* Mantém proporção de aspecto padrão */
+    aspect-ratio: 1/1; /* Proporção quadrada */
 }
 
-/* Para telas muito pequenas, ajusta a proporção para evitar que fique muito alto */
 @media (max-width: 500px) {
     .carousel-container {
-        aspect-ratio: 4/3;
+        aspect-ratio: 1/1; /* Mantém quadrado mesmo em telas pequenas */
     }
 }
 
@@ -50,7 +48,6 @@
     z-index: 10; /* Garante que os controles fiquem acima das imagens */
 }
 
-/* Torna os botões menores em dispositivos móveis */
 @media (max-width: 768px) {
     .carousel-control {
         width: 30px;
@@ -110,7 +107,6 @@
     transform: scale(1.2);
 }
 
-/* Caso decida usar tags <img> em vez de background-image */
 .carousel-item img {
     width: 100%;
     height: 100%;
