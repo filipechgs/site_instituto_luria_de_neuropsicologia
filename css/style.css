@@ -205,6 +205,23 @@ main::before {
     margin: 15px auto 0;
 }
 
+.section-title h3 {
+    font-size: 1.5rem;
+    color: var(--primary-dark-green);
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.section-title h3::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: var(--accent-amber);
+    display: block;
+    margin: 15px auto 0;
+}
+
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
