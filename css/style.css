@@ -377,48 +377,8 @@ main::before {
     margin-bottom: 5px;
 }
 
-/* .contact-form form {
-    display: grid;
-    gap: 15px;
-}
+/* Botões compatilhar */
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group label {
-    margin-bottom: 5px;
-    font-weight: 500;
-}
-
-.form-group input,
-.form-group textarea {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
-}
-
-.form-group textarea {
-    min-height: 120px;
-    resize: vertical;
-}
-
-.form-button {
-    background-color: var(--primary-dark-green);
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 4px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.form-button:hover {
-    background-color: var(--primary-medium-green);
-} */
 
 /* Link do WhatsApp */
 .whatsapp-link {
