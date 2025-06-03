@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let currentIndex = 0;
     const totalItems = items.length;
+    let autoplayInterval = 1000; // Variável para armazenar o intervalo de autoplay
 
     // Criar indicadores
     for (let i = 0; i < totalItems; i++) {
@@ -55,6 +56,25 @@ document.addEventListener('DOMContentLoaded', function () {
         updateCarousel();
     }
 
+    // Função para iniciar o autoplay
+    function startAutoplay() {
+        // Limpar qualquer intervalo existente para evitar múltiplos intervalos
+        clearInterval(autoplayInterval);
+        autoplayInterval = setInterval(goToNextItem, 2500);
+    }
+
+    // Função para reiniciar o autoplay
+    function resetAutoplay() {
+        clearInterval(autoplayInterval);
+        startAutoplay();
+    }
+
+    // Função para pausar o autoplay
+    function pauseAutoplay() {
+        clearInterval(autoplayInterval);
+    }
+
+
     // Adicionar event listeners aos botões
     nextBtn.addEventListener('click', goToNextItem);
     prevBtn.addEventListener('click', goToPrevItem);
@@ -91,4 +111,13 @@ document.addEventListener('DOMContentLoaded', function () {
             goToPrevItem();
         }
     }
+
+    // Pausar o autoplay quando o mouse estiver sobre o carrossel
+    carousel.addEventListener('mouseenter', pauseAutoplay);
+
+    // Reiniciar o autoplay quando o mouse sair do carrossel
+    carousel.addEventListener('mouseleave', startAutoplay);
+
+    // Iniciar o autoplay quando a página carregar
+    startAutoplay();
 });
