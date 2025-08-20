@@ -44,9 +44,11 @@
     <link rel="manifest" href="/img/site.webmanifest" />
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header-nav.css">
     <link rel="stylesheet" href="css/social-media.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/publicacoes.css">
+    <link rel="stylesheet" href="css/media-queries.css">
 </head>
 
 <body>
@@ -60,16 +62,21 @@
         <button class="mobile-menu-btn">☰</button>
         <nav id="main-nav">
             <ul>
-                <li><a href="index.html#inicio">Início</a></li>
-                <li><a href="index.html#sobre">Sobre</a></li>
-                <li><a href="index.html#servicos">Serviços</a></li>
-                <li><a href="index.html#equipe">Equipe</a></li>
-                <li><a href="index.html#contato">Contato</a></li>
-                <li><a href="index.html#redes-sociais">Redes Sociais</a></li>
-
+                <li class="has-submenu">
+                    <a href="index.html#inicio">Início</a>
+                    <ul class="submenu">
+                        <li><a href="index.html#sobre">Sobre</a></li>
+                        <li><a href="index.html#servicos">Serviços</a></li>
+                        <li><a href="index.html#para-profissionais">Para Profissionais</a></li>
+                        <li><a href="index.html#depoimentos">Depoimentos</a></li>
+                        <li><a href="index.html#equipe">Equipe</a></li>
+                        <li><a href="index.html#redes-sociais">Redes Sociais</a></li>
+                    </ul>
+                </li>
                 <li><a href="publicacoes.html">Publicações e Eventos</a></li>
                 <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="">Blog</a></li>   
+                <li><a href="index.html#contato">Contato</a></li>
+                <!-- <li><a href="">Blog</a></li> -->
             </ul>
         </nav>
     </div>
@@ -167,8 +174,10 @@
                     <h3>Reabilitação Cognitiva</h3>
                 </div>
                 <div class="service-content">
-                    <p>Reabilitação de funções cognitivas, como memória, atenção, linguagem e funções executivas. O foco
-                        é promover a recuperação ou compensação das funções afetadas, melhorando a qualidade de vida do
+                    <p>Reabilitação de funções cognitivas, como memória, atenção, linguagem e funções executivas. O
+                        foco
+                        é promover a recuperação ou compensação das funções afetadas, melhorando a qualidade de vida
+                        do
                         paciente.
                 </div>
             </div>
@@ -190,13 +199,25 @@
                         para superá-las, em colaboração com escolas e educadores.</p>
                 </div>
             </div>
+
+        </div>
+    </section>
+
+    <!-- Serviços para profissionais -->
+    <section id="para-profissionais" class="section services">
+        <div class="section-title">
+            <h2>Para profissionais</h2>
+        </div>
+        <div class="services-container">
             <div class="service-card">
                 <div class="service-icon">
                     <h3>Supervisão em Neuropsicologia</h3>
                 </div>
                 <div class="service-content">
-                    <p>Supervisão <b>para profissionais</b> da psicologia que desejam aprimorar sua prática clínica à
-                        luz da abordagem histórico-cultural e teoria da atividade. Sessões com dicussão, acompanhamento
+                    <p>Supervisão <b>para profissionais</b> da psicologia que desejam aprimorar sua prática clínica
+                        à
+                        luz da abordagem histórico-cultural e teoria da atividade. Sessões com dicussão,
+                        acompanhamento
                         e orientação de casos clínicos, itegrando teoria e prática.</p>
                 </div>
             </div>
@@ -205,7 +226,8 @@
                     <h3>Curso com Pratica Supervisionada</h3>
                 </div>
                 <div class="service-content">
-                    <p>Curso com Supervisão <b>para profissionáis</b> de piscologia que queiram aprofundar ou inicar a
+                    <p>Curso com Supervisão <b>para profissionáis</b> de piscologia que queiram aprofundar ou inicar
+                        a
                         pratica clínica em neuropsicologia, com acesso a instrumentos, teste e orientações para
                         avaliação neuropsicológica.</p>
                 </div>
@@ -222,6 +244,38 @@
         </div>
     </section>
 
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="section">
+        <div class="section-title">
+            <h2>Depoimentos</h2>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+
+                <p>
+                    "A participação no curso de prática supervisionada está sendo fundamental para consolidar os
+                    conhecimentos teóricos e associar com a prática. Um dos pontos mais significativos do curso é o
+                    contato com novos instrumentos de avaliação. Ter a oportunidade de aprender sobre diferentes testes,
+                    compreendendo sobre seus objetivos, fundamentos teóricos e formas de aplicação, é muito
+                    enriquecedor."
+                </p>
+
+                <p class="testimonial-name">Aluna do Curso com Pratica Supervisionada</p>
+            </div>
+
+            <div class="testimonial-card">
+                <p>
+                    "Durante o processo, o curso ajuda a realizar as avaliações com mais segurança. Além disso, o
+                    aprendizado sobre a correção e interpretação dos testes está sendo essencial. Pude perceber o quanto
+                    cada detalhe observado durante a aplicação pode refletir aspectos importantes do funcionamento
+                    cognitivo e emocional do paciente. A supervisão é um espaço muito bom para tirar dúvidas, discutir
+                    casos e compreender como transformar os dados obtidos em informações clínicas relevantes!"
+                </p>
+                <p class="testimonial-name">Aluna do Curso com Pratica Supervisionada</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Equipe -->
     <section id="equipe" class="section">
         <div class="section-title">
@@ -233,7 +287,7 @@
                 <div class="member-info">
                     <h3>Caio Pereira Gottschalk Morais</h3>
                     <p>Neuropsicólogo - CRP 03/3085</p><br>
-                
+
                     <p>Mestre em Diagnóstico e Reabilitação Neuropsicológica pela Universidade Autônoma de Puebla,
                         México. Atua em avaliação e intervenção neuropsicológica e em psicoterapia com crianças,
                         adolescentes e adultos. Ministra aulas em cursos de pós-graduação e cursos livres. Realiza
@@ -452,13 +506,15 @@
                 <li><a href="index.html#inicio">Início</a></li>
                 <li><a href="index.html#sobre">Sobre</a></li>
                 <li><a href="index.html#servicos">Serviços</a></li>
+                <li><a href="index.html#para-profissionais">Para Profissionais</a></li>
+                <li><a href="index.html#depoimentos">Depoimentos</a></li>
                 <li><a href="index.html#equipe">Equipe</a></li>
-                <li><a href="index.html#contato">Contato</a></li>
                 <li><a href="index.html#redes-sociais">Redes Sociais</a></li>
-                
+
                 <li><a href="publicacoes.html">Publicações e Eventos</a></li>
                 <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="">Blog</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+                <!-- <li><a href="">Blog</a></li> -->
             </ul>
         </div>
         <div class="footer-column">

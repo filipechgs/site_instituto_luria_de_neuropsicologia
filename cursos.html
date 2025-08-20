@@ -44,9 +44,11 @@
     <link rel="manifest" href="/img/site.webmanifest" />
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header-nav.css">
     <link rel="stylesheet" href="css/social-media.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/publicacoes.css">
+    <link rel="stylesheet" href="css/media-queries.css">
 </head>
 
 <body>
@@ -60,16 +62,21 @@
         <button class="mobile-menu-btn">☰</button>
         <nav id="main-nav">
             <ul>
-                <li><a href="index.html#inicio">Início</a></li>
-                <li><a href="index.html#sobre">Sobre</a></li>
-                <li><a href="index.html#servicos">Serviços</a></li>
-                <li><a href="index.html#equipe">Equipe</a></li>
-                <li><a href="index.html#contato">Contato</a></li>
-                <li><a href="index.html#redes-sociais">Redes Sociais</a></li>
-
+                <li class="has-submenu">
+                    <a href="index.html#inicio">Início</a>
+                    <ul class="submenu">
+                        <li><a href="index.html#sobre">Sobre</a></li>
+                        <li><a href="index.html#servicos">Serviços</a></li>
+                        <li><a href="index.html#para-profissionais">Para Profissionais</a></li>
+                        <li><a href="index.html#depoimentos">Depoimentos</a></li>
+                        <li><a href="index.html#equipe">Equipe</a></li>
+                        <li><a href="index.html#redes-sociais">Redes Sociais</a></li>
+                    </ul>
+                </li>
                 <li><a href="publicacoes.html">Publicações e Eventos</a></li>
                 <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="">Blog</a></li>   
+                <li><a href="index.html#contato">Contato</a></li>
+                <!-- <li><a href="">Blog</a></li> -->
             </ul>
         </nav>
     </div>
@@ -186,13 +193,15 @@
                 <li><a href="index.html#inicio">Início</a></li>
                 <li><a href="index.html#sobre">Sobre</a></li>
                 <li><a href="index.html#servicos">Serviços</a></li>
+                <li><a href="index.html#para-profissionais">Para Profissionais</a></li>
+                <li><a href="index.html#depoimentos">Depoimentos</a></li>
                 <li><a href="index.html#equipe">Equipe</a></li>
-                <li><a href="index.html#contato">Contato</a></li>
                 <li><a href="index.html#redes-sociais">Redes Sociais</a></li>
-                
+
                 <li><a href="publicacoes.html">Publicações e Eventos</a></li>
                 <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="">Blog</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+                <!-- <li><a href="">Blog</a></li> -->
             </ul>
         </div>
         <div class="footer-column">

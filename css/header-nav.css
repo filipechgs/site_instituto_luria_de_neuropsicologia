@@ -1,0 +1,136 @@
+/* Header e nav*/
+header {
+    background: var(--background-color);
+    color: var(--primary-dark-green);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+}
+
+/* 
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+} 
+*/
+
+#main-nav {
+    margin-top: 40px;
+    background-color: var(--background-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    background-color: var(--background-color);
+}
+
+nav ul li {
+    position: relative;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--light-color);
+}
+
+/* Estilos do submenu */
+.has-submenu {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--background-color);
+    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    flex-direction: column;
+}
+
+.has-submenu:hover .submenu {
+    display: flex;
+}
+
+.submenu li {
+    width: 95%;
+    padding: 10px 15px;
+    border-radius: 4px
+}
+
+.submenu li a:hover {
+    background-color: var(--primary-medium-green);
+}
+
+.submenu li a {
+    color: var(--primary-dark-green);
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.submenu li:hover > a {
+    color: var(--light-color);
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: var(--primary-dark-green);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: var(--primary-medium-green);
+    color: var(--light-color)
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--primary-dark-green);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+main::before {
+    content: "";
+    display: block;
+    height: 111px;
+    margin-top: 0px;
+    visibility: hidden;
+    pointer-events: none;
+}
