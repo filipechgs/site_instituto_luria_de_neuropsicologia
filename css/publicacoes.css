@@ -358,7 +358,7 @@
 /* Estilos para o menu de navegação lateral */
 .side-nav {
     position: fixed;
-    top: 138px;
+    top: 143px;
     transform: translateY(-50%);
     background-color: var(--light-color);
     padding: 5px 16px;
