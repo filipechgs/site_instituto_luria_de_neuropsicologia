@@ -37,7 +37,7 @@ header {
 */
 
 #main-nav {
-    margin-top: 0;
+    margin-top: 42px;
     background-color: var(--background-color);
 }
 
