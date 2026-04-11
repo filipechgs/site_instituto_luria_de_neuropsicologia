@@ -14,11 +14,14 @@ document.querySelectorAll('a').forEach(anchor => {
         // Fechar menu mobile se estiver aberto
         if (mainNav.classList.contains('active')) {
             mainNav.classList.remove('active');
+            mobileMenuBtn.textContent = mobileMenuBtn.textContent === "☰"? "⛌" : "☰";
         }
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        if (document.querySelector(this.getAttribute('href')) !== null) {
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     });
 });
 

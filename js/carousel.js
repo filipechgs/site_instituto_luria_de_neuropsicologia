@@ -76,8 +76,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     // Adicionar event listeners aos botões
-    nextBtn.addEventListener('click', goToNextItem);
-    prevBtn.addEventListener('click', goToPrevItem);
+    if (nextBtn !== null) nextBtn.addEventListener('click', goToNextItem);
+    if (prevBtn !== null) prevBtn.addEventListener('click', goToPrevItem);
 
     // Navegação por teclado
     document.addEventListener('keydown', function (e) {
